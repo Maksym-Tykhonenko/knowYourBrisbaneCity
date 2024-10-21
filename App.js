@@ -1,43 +1,22 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import {StyleSheet} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 const Tab = createBottomTabNavigator();
-const Stack = createNativeStackNavigator();
 
-function HomeScreen() {
-  return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text>Home Screen</Text>
-    </View>
-  );
-}
-
-function OtherScreen() {
-  return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text>Other Screen</Text>
-    </View>
-  );
-}
+import HomeRoute from './routes/HomeRoute';
+import PhotoAlbymRoute from './routes/PhotoAlbymRoute';
+import SetingsRoute from './routes/SetingsRoute';
 
 const App = () => {
   return (
     <NavigationContainer>
       <Tab.Navigator screenOptions={{headerShown: false}}>
-        <Tab.Screen name="HomeScreen" component={HomeScreen} />
-        <Tab.Screen name="OtherScreen" component={OtherScreen} />
+        <Tab.Screen name="HomeRoute" component={HomeRoute} />
+        <Tab.Screen name="PhotoAlbymRoute" component={PhotoAlbymRoute} />
+        <Tab.Screen name="SetingsRoute" component={SetingsRoute} />
       </Tab.Navigator>
     </NavigationContainer>
   );

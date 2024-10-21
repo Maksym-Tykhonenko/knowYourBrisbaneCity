@@ -3,7 +3,7 @@ import {Text, ImageBackground, View} from 'react-native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 const Stack = createNativeStackNavigator();
 
-function SetingsScreen() {
+function ProfileScreen() {
   return (
     <View style={{flex: 1}}>
       <ImageBackground
@@ -16,19 +16,19 @@ function SetingsScreen() {
             alignItems: 'center',
             justifyContent: 'center',
           }}>
-          <Text>Setings Screen</Text>
+          <Text>Profile Screen</Text>
         </View>
       </ImageBackground>
     </View>
   );
 }
 
-const SetingsRoute = () => {
+const ProfileRoute = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
-      <Stack.Screen name="SetingsScreen" component={SetingsScreen} />
+      <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
     </Stack.Navigator>
   );
 };
 
-export default SetingsRoute;
+export default ProfileRoute;

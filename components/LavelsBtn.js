@@ -2,7 +2,7 @@ import React from 'react';
 import {View, StyleSheet, TouchableOpacity, Text} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
-const OperationBtn = ({children, castomeStyles, title, foo}) => {
+const LavelsBtn = ({children, castomeStyles, title, foo}) => {
   return (
     <TouchableOpacity
       style={[styles.btn, castomeStyles]}
@@ -10,7 +10,7 @@ const OperationBtn = ({children, castomeStyles, title, foo}) => {
         foo();
       }}>
       <LinearGradient
-        colors={['rgba(255, 0, 0, 0.8)', 'rgba(0, 0, 255, 0.8)']}
+        colors={['rgba(255, 0, 0, 0.8)', 'rgba(0, 0, 255, 0.8)']} // гра��ієнт від синього до червоного
         start={{x: 0, y: 0}}
         end={{x: 1, y: 1}}
         style={styles.btnLinearGradient}>
@@ -41,10 +41,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   btnText: {
-    fontSize: 25,
+    fontSize: 45,
     fontFamily: 'PlaywriteGBS-Italic',
     color: '#fbc02e',
   },
 });
 
-export default OperationBtn;
+export default LavelsBtn;

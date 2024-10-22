@@ -51,21 +51,21 @@
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-knowYourBrisbaneCity-knowYourBrisbaneCityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-knowYourBrisbaneCity-knowYourBrisbaneCityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-knowYourBrisbaneCity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-knowYourBrisbaneCity.debug.xcconfig"; path = "Target Support Files/Pods-knowYourBrisbaneCity/Pods-knowYourBrisbaneCity.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-knowYourBrisbaneCity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-knowYourBrisbaneCity.release.xcconfig"; path = "Target Support Files/Pods-knowYourBrisbaneCity/Pods-knowYourBrisbaneCity.release.xcconfig"; sourceTree = "<group>"; };
-		5AE78EB2D7284503BE75C020 /* PlaywriteGBS-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "PlaywriteGBS-Light.ttf"; path = "../assets/fonts/PlaywriteGBS-Light.ttf"; sourceTree = "<group>"; };
+		5AE78EB2D7284503BE75C020 /* PlaywriteGBS-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PlaywriteGBS-Light.ttf"; path = "../assets/fonts/PlaywriteGBS-Light.ttf"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-knowYourBrisbaneCity-knowYourBrisbaneCityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-knowYourBrisbaneCity-knowYourBrisbaneCityTests.debug.xcconfig"; path = "Target Support Files/Pods-knowYourBrisbaneCity-knowYourBrisbaneCityTests/Pods-knowYourBrisbaneCity-knowYourBrisbaneCityTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-knowYourBrisbaneCity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-knowYourBrisbaneCity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		74C47985B9594A8B96ACA7E0 /* PlaywriteGBS-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "PlaywriteGBS-ThinItalic.ttf"; path = "../assets/fonts/PlaywriteGBS-ThinItalic.ttf"; sourceTree = "<group>"; };
+		74C47985B9594A8B96ACA7E0 /* PlaywriteGBS-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PlaywriteGBS-ThinItalic.ttf"; path = "../assets/fonts/PlaywriteGBS-ThinItalic.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = knowYourBrisbaneCity/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8924393908F867FA90BE6357 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = knowYourBrisbaneCity/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		8924393908F867FA90BE6357 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = knowYourBrisbaneCity/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-knowYourBrisbaneCity-knowYourBrisbaneCityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-knowYourBrisbaneCity-knowYourBrisbaneCityTests.release.xcconfig"; path = "Target Support Files/Pods-knowYourBrisbaneCity-knowYourBrisbaneCityTests/Pods-knowYourBrisbaneCity-knowYourBrisbaneCityTests.release.xcconfig"; sourceTree = "<group>"; };
-		96DA250B336047F78B5DE255 /* PlaywriteGBS-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "PlaywriteGBS-Thin.ttf"; path = "../assets/fonts/PlaywriteGBS-Thin.ttf"; sourceTree = "<group>"; };
-		9C5E5C0F60704695A54C931B /* PlaywriteGBS-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "PlaywriteGBS-ExtraLightItalic.ttf"; path = "../assets/fonts/PlaywriteGBS-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
-		AD90E08445604C9EBE07AD61 /* PlaywriteGBS-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "PlaywriteGBS-Italic.ttf"; path = "../assets/fonts/PlaywriteGBS-Italic.ttf"; sourceTree = "<group>"; };
-		B87FCF191DCE4816B2F6858B /* PlaywriteGBS-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "PlaywriteGBS-Italic-VariableFont_wght.ttf"; path = "../assets/fonts/PlaywriteGBS-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
-		D0C45144323F4FD6B1D34474 /* PlaywriteGBS-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "PlaywriteGBS-LightItalic.ttf"; path = "../assets/fonts/PlaywriteGBS-LightItalic.ttf"; sourceTree = "<group>"; };
-		DFCDC2AB306847C49BA522EE /* PlaywriteGBS-VariableFont_wght.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "PlaywriteGBS-VariableFont_wght.ttf"; path = "../assets/fonts/PlaywriteGBS-VariableFont_wght.ttf"; sourceTree = "<group>"; };
-		E52B710B8A48493191503729 /* PlaywriteGBS-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "PlaywriteGBS-Regular.ttf"; path = "../assets/fonts/PlaywriteGBS-Regular.ttf"; sourceTree = "<group>"; };
-		E54EE1F3456C4942BF3E3126 /* PlaywriteGBS-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "PlaywriteGBS-ExtraLight.ttf"; path = "../assets/fonts/PlaywriteGBS-ExtraLight.ttf"; sourceTree = "<group>"; };
+		96DA250B336047F78B5DE255 /* PlaywriteGBS-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PlaywriteGBS-Thin.ttf"; path = "../assets/fonts/PlaywriteGBS-Thin.ttf"; sourceTree = "<group>"; };
+		9C5E5C0F60704695A54C931B /* PlaywriteGBS-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PlaywriteGBS-ExtraLightItalic.ttf"; path = "../assets/fonts/PlaywriteGBS-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		AD90E08445604C9EBE07AD61 /* PlaywriteGBS-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PlaywriteGBS-Italic.ttf"; path = "../assets/fonts/PlaywriteGBS-Italic.ttf"; sourceTree = "<group>"; };
+		B87FCF191DCE4816B2F6858B /* PlaywriteGBS-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PlaywriteGBS-Italic-VariableFont_wght.ttf"; path = "../assets/fonts/PlaywriteGBS-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		D0C45144323F4FD6B1D34474 /* PlaywriteGBS-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PlaywriteGBS-LightItalic.ttf"; path = "../assets/fonts/PlaywriteGBS-LightItalic.ttf"; sourceTree = "<group>"; };
+		DFCDC2AB306847C49BA522EE /* PlaywriteGBS-VariableFont_wght.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PlaywriteGBS-VariableFont_wght.ttf"; path = "../assets/fonts/PlaywriteGBS-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		E52B710B8A48493191503729 /* PlaywriteGBS-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PlaywriteGBS-Regular.ttf"; path = "../assets/fonts/PlaywriteGBS-Regular.ttf"; sourceTree = "<group>"; };
+		E54EE1F3456C4942BF3E3126 /* PlaywriteGBS-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PlaywriteGBS-ExtraLight.ttf"; path = "../assets/fonts/PlaywriteGBS-ExtraLight.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -178,7 +178,6 @@
 				DFCDC2AB306847C49BA522EE /* PlaywriteGBS-VariableFont_wght.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -523,6 +522,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = knowYourBrisbaneCity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,6 +549,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = knowYourBrisbaneCity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -617,7 +618,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD = "";
 				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -694,7 +695,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD = "";
 				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (

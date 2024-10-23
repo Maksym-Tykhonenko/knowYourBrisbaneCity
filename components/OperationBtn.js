@@ -3,6 +3,7 @@ import {View, StyleSheet, TouchableOpacity, Text} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
 const OperationBtn = ({children, castomeStyles, title, foo}) => {
+  //console.log('castomeStyles==>', castomeStyles);
   return (
     <TouchableOpacity
       style={[styles.btn, castomeStyles]}

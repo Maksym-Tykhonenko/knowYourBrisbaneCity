@@ -164,7 +164,7 @@ const Level6Screen = ({navigation}) => {
   const currentQuestion = lvl6[currentQuestionIndex];
 
   const GoBack = () => {
-    navigation.goBack();
+    navigation.navigate('GameScreen');
   };
 
   const GoToNext = () => {

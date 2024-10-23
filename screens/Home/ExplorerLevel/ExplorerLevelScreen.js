@@ -10,6 +10,7 @@ const windowHeight = Dimensions.get('window').height;
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const ExplorerLevelScreen = ({navigation}) => {
+  const [lock1lvl, setLock1lvl] = useState(true);
   const [lock2lvl, setLock2lvl] = useState(false);
   const [lock3lvl, setLock3lvl] = useState(false);
   const [lock4lvl, setLock4lvl] = useState(false);
@@ -23,6 +24,14 @@ const ExplorerLevelScreen = ({navigation}) => {
 
   useEffect(() => {
     getAboute2LvlData();
+    getAboute3LvlData();
+    getAboute4LvlData();
+    getAboute5LvlData();
+    getAboute6LvlData();
+    getAboute7LvlData();
+    getAboute8LvlData();
+    getAboute9LvlData();
+    getAboute10LvlData();
   }, []);
 
   const getAboute2LvlData = async () => {
@@ -32,6 +41,102 @@ const ExplorerLevelScreen = ({navigation}) => {
         const parsedData = JSON.parse(jsonData);
         //console.log('parsedData==>', parsedData);
         setLock2lvl(parsedData.passteLevel);
+      }
+    } catch (e) {
+      console.log('Помилка отримання даних:', e);
+    }
+  };
+  const getAboute3LvlData = async () => {
+    try {
+      const jsonData = await AsyncStorage.getItem(`Level2Screen`);
+      if (jsonData !== null) {
+        const parsedData = JSON.parse(jsonData);
+        //console.log('parsedData==>', parsedData);
+        setLock3lvl(parsedData.passteLevel);
+      }
+    } catch (e) {
+      console.log('Помилка отримання даних:', e);
+    }
+  };
+  const getAboute4LvlData = async () => {
+    try {
+      const jsonData = await AsyncStorage.getItem(`Level3Screen`);
+      if (jsonData !== null) {
+        const parsedData = JSON.parse(jsonData);
+        //console.log('parsedData==>', parsedData);
+        setLock4lvl(parsedData.passteLevel);
+      }
+    } catch (e) {
+      console.log('Помилка отримання даних:', e);
+    }
+  };
+  const getAboute5LvlData = async () => {
+    try {
+      const jsonData = await AsyncStorage.getItem(`Level4Screen`);
+      if (jsonData !== null) {
+        const parsedData = JSON.parse(jsonData);
+        //console.log('parsedData==>', parsedData);
+        setLock5lvl(parsedData.passteLevel);
+      }
+    } catch (e) {
+      console.log('Помилка отримання даних:', e);
+    }
+  };
+  const getAboute6LvlData = async () => {
+    try {
+      const jsonData = await AsyncStorage.getItem(`Level5Screen`);
+      if (jsonData !== null) {
+        const parsedData = JSON.parse(jsonData);
+        //console.log('parsedData==>', parsedData);
+        setLock6lvl(parsedData.passteLevel);
+      }
+    } catch (e) {
+      console.log('Помилка отримання даних:', e);
+    }
+  };
+  const getAboute7LvlData = async () => {
+    try {
+      const jsonData = await AsyncStorage.getItem(`Level6Screen`);
+      if (jsonData !== null) {
+        const parsedData = JSON.parse(jsonData);
+        //console.log('parsedData==>', parsedData);
+        setLock7lvl(parsedData.passteLevel);
+      }
+    } catch (e) {
+      console.log('Помилка отримання даних:', e);
+    }
+  };
+  const getAboute8LvlData = async () => {
+    try {
+      const jsonData = await AsyncStorage.getItem(`Level7Screen`);
+      if (jsonData !== null) {
+        const parsedData = JSON.parse(jsonData);
+        //console.log('parsedData==>', parsedData);
+        setLock8lvl(parsedData.passteLevel);
+      }
+    } catch (e) {
+      console.log('Помилка отримання даних:', e);
+    }
+  };
+  const getAboute9LvlData = async () => {
+    try {
+      const jsonData = await AsyncStorage.getItem(`Level8Screen`);
+      if (jsonData !== null) {
+        const parsedData = JSON.parse(jsonData);
+        //console.log('parsedData==>', parsedData);
+        setLock9lvl(parsedData.passteLevel);
+      }
+    } catch (e) {
+      console.log('Помилка отримання даних:', e);
+    }
+  };
+  const getAboute10LvlData = async () => {
+    try {
+      const jsonData = await AsyncStorage.getItem(`Level9Screen`);
+      if (jsonData !== null) {
+        const parsedData = JSON.parse(jsonData);
+        //console.log('parsedData==>', parsedData);
+        setLock10lvl(parsedData.passteLevel);
       }
     } catch (e) {
       console.log('Помилка отримання даних:', e);
@@ -51,6 +156,8 @@ const ExplorerLevelScreen = ({navigation}) => {
         <View style={styles.levelsConteiner}>
           {/**Levels Btn */}
           <LavelsBtn
+            castomeStylesText={{color: lock1lvl ? '#fbc02e' : 'grey'}}
+            unlock={lock1lvl}
             castomeStyles={styles.castomeLevelsBtnStyles}
             title="1"
             foo={() => {
@@ -58,6 +165,7 @@ const ExplorerLevelScreen = ({navigation}) => {
             }}
           />
           <LavelsBtn
+            castomeStylesText={{color: lock2lvl ? '#fbc02e' : 'grey'}}
             unlock={lock2lvl}
             castomeStyles={styles.castomeLevelsBtnStyles}
             title="2"
@@ -66,6 +174,8 @@ const ExplorerLevelScreen = ({navigation}) => {
             }}
           />
           <LavelsBtn
+            castomeStylesText={{color: lock3lvl ? '#fbc02e' : 'grey'}}
+            unlock={lock3lvl}
             castomeStyles={styles.castomeLevelsBtnStyles}
             title="3"
             foo={() => {
@@ -73,6 +183,8 @@ const ExplorerLevelScreen = ({navigation}) => {
             }}
           />
           <LavelsBtn
+            castomeStylesText={{color: lock4lvl ? '#fbc02e' : 'grey'}}
+            unlock={lock4lvl}
             castomeStyles={styles.castomeLevelsBtnStyles}
             title="4"
             foo={() => {
@@ -80,6 +192,8 @@ const ExplorerLevelScreen = ({navigation}) => {
             }}
           />
           <LavelsBtn
+            castomeStylesText={{color: lock5lvl ? '#fbc02e' : 'grey'}}
+            unlock={lock5lvl}
             castomeStyles={styles.castomeLevelsBtnStyles}
             title="5"
             foo={() => {
@@ -87,6 +201,8 @@ const ExplorerLevelScreen = ({navigation}) => {
             }}
           />
           <LavelsBtn
+            castomeStylesText={{color: lock6lvl ? '#fbc02e' : 'grey'}}
+            unlock={lock6lvl}
             castomeStyles={styles.castomeLevelsBtnStyles}
             title="6"
             foo={() => {
@@ -94,6 +210,8 @@ const ExplorerLevelScreen = ({navigation}) => {
             }}
           />
           <LavelsBtn
+            castomeStylesText={{color: lock7lvl ? '#fbc02e' : 'grey'}}
+            unlock={lock7lvl}
             castomeStyles={styles.castomeLevelsBtnStyles}
             title="7"
             foo={() => {
@@ -101,6 +219,8 @@ const ExplorerLevelScreen = ({navigation}) => {
             }}
           />
           <LavelsBtn
+            castomeStylesText={{color: lock8lvl ? '#fbc02e' : 'grey'}}
+            unlock={lock8lvl}
             castomeStyles={styles.castomeLevelsBtnStyles}
             title="8"
             foo={() => {
@@ -108,6 +228,8 @@ const ExplorerLevelScreen = ({navigation}) => {
             }}
           />
           <LavelsBtn
+            castomeStylesText={{color: lock9lvl ? '#fbc02e' : 'grey'}}
+            unlock={lock9lvl}
             castomeStyles={styles.castomeLevelsBtnStyles}
             title="9"
             foo={() => {
@@ -115,6 +237,11 @@ const ExplorerLevelScreen = ({navigation}) => {
             }}
           />
           <LavelsBtn
+            castomeStylesText={{
+              color: lock10lvl ? '#fbc02e' : 'grey',
+              fontSize: 35,
+            }}
+            unlock={lock10lvl}
             castomeStyles={styles.castomeLevelsBtnStyles}
             title="10"
             foo={() => {

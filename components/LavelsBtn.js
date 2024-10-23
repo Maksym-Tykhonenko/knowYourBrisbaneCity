@@ -2,10 +2,18 @@ import React from 'react';
 import {View, StyleSheet, TouchableOpacity, Text} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
-const LavelsBtn = ({children, castomeStyles, title, foo, unlock}) => {
+const LavelsBtn = ({
+  children,
+  castomeStyles,
+  title,
+  foo,
+  unlock,
+  castomeStylesText,
+}) => {
+  console.log('castomeStyles==>', castomeStyles);
   return (
     <TouchableOpacity
-      disabled={unlock}
+      disabled={!unlock}
       style={[styles.btn, castomeStyles]}
       onPress={() => {
         foo();
@@ -15,7 +23,7 @@ const LavelsBtn = ({children, castomeStyles, title, foo, unlock}) => {
         start={{x: 0, y: 0}}
         end={{x: 1, y: 1}}
         style={styles.btnLinearGradient}>
-        <Text style={styles.btnText}>{title}</Text>
+        <Text style={[styles.btnText, castomeStylesText]}>{title}</Text>
       </LinearGradient>
     </TouchableOpacity>
   );
@@ -44,7 +52,7 @@ const styles = StyleSheet.create({
   btnText: {
     fontSize: 45,
     fontFamily: 'PlaywriteGBS-Italic',
-    color: '#fbc02e',
+    //color: '#fbc02e',
   },
 });
 

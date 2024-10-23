@@ -2,9 +2,10 @@ import React from 'react';
 import {View, StyleSheet, TouchableOpacity, Text} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
-const LavelsBtn = ({children, castomeStyles, title, foo}) => {
+const LavelsBtn = ({children, castomeStyles, title, foo, unlock}) => {
   return (
     <TouchableOpacity
+      disabled={unlock}
       style={[styles.btn, castomeStyles]}
       onPress={() => {
         foo();

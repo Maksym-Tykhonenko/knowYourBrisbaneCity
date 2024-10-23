@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   View,
   Text,
@@ -12,19 +12,95 @@ import {
 import Layaut from '../../../components/Layaut';
 import {lvl1} from '../../../data/Explorer/lvl1';
 import OperationBtn from '../../../components/OperationBtn';
+import CongratModal from '../../../components/CongratModal';
 import {Dimensions} from 'react-native';
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Level1Screen = ({navigation}) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [heart, setHeart] = useState(3);
   const [points, setPoints] = useState(0);
+  //console.log('points==>', points);
   const [help, setHelp] = useState(3);
-  const [modalIsVisible, setModalIsVisible] = useState(false);
+  const [congrModalIsVisible, setCongrModalIsVisible] = useState(false);
+  //console.log('congrModalIsVisible==>', congrModalIsVisible);
   const [availableAnswers, setAvailableAnswers] = useState(
     lvl1[currentQuestionIndex].answers,
   ); // Список варіантів відповідей
+  const [passteLevel, setPassteLevel] = useState(false);
+  console.log('passteLevel==>', passteLevel);
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  useEffect(() => {
+    setData();
+  }, [points]);
+
+  const setData = async () => {
+    try {
+      const data = {
+        points,
+      };
+
+      const jsonData = JSON.stringify(data);
+      await AsyncStorage.setItem(`Points`, jsonData);
+      //console.log('Дані збережено в AsyncStorage');
+    } catch (e) {
+      console.log('Помилка збереження даних:', e);
+    }
+  };
+
+  const getData = async () => {
+    try {
+      const jsonData = await AsyncStorage.getItem(`Points`);
+      if (jsonData !== null) {
+        const parsedData = JSON.parse(jsonData);
+        //console.log('parsedData==>', parsedData);
+        setPoints(parsedData.points);
+      }
+    } catch (e) {
+      console.log('Помилка отримання даних:', e);
+    }
+  };
+  /////////////////////////////////////
+  useEffect(() => {
+    getCompliteData();
+  }, []);
+
+  useEffect(() => {
+    setCompliteData();
+  }, [passteLevel]);
+
+  const setCompliteData = async () => {
+    try {
+      const data = {
+        passteLevel,
+      };
+
+      const jsonData = JSON.stringify(data);
+      await AsyncStorage.setItem(`Level1Screen`, jsonData);
+      //console.log('Дані збережено в AsyncStorage');
+    } catch (e) {
+      console.log('Помилка збереження даних:', e);
+    }
+  };
+
+  const getCompliteData = async () => {
+    try {
+      const jsonData = await AsyncStorage.getItem(`Level1Screen`);
+      if (jsonData !== null) {
+        const parsedData = JSON.parse(jsonData);
+        //console.log('parsedData==>', parsedData);
+        setPassteLevel(parsedData.passteLevel);
+      }
+    } catch (e) {
+      console.log('Помилка отримання даних:', e);
+    }
+  };
 
   const handleAnswerSelection = selectedAnswer => {
     const currentQuestion = lvl1[currentQuestionIndex];
@@ -35,12 +111,14 @@ const Level1Screen = ({navigation}) => {
         setCurrentQuestionIndex(currentQuestionIndex + 1);
         setAvailableAnswers(lvl1[currentQuestionIndex + 1].answers); // Оновити варіанти відповідей
       } else {
-        Alert.alert('Вітаємо!', 'Ви пройшли рівень.', [
-          {
-            text: 'OK',
-            onPress: () => navigation.navigate('GameScreen'), // Змінити 'Home' на потрібний екран
-          },
-        ]);
+        //Alert.alert('Вітаємо!', 'Ви пройшли рівень.', [
+        //  {
+        //    text: 'OK',
+        //    onPress: () => navigation.navigate('GameScreen'), // Змінити 'Home' на потрібний екран
+        //  },
+        //]);
+        setCongrModalIsVisible(true);
+        setPassteLevel(true);
       }
     } else {
       // Якщо відповідь неправильна, відняти одне життя
@@ -52,7 +130,7 @@ const Level1Screen = ({navigation}) => {
               onPress: () => navigation.navigate('GameScreen'), // Змінити 'Home' на потрібний екран
             },
           ]);
-          setModalIsVisible(true);
+          setCongrModalIsVisible(true);
           return 0; // Встановити життя на 0
         } else {
           Alert.alert('Невірна відповідь', 'Спробуйте ще раз.');
@@ -88,6 +166,11 @@ const Level1Screen = ({navigation}) => {
 
   const GoBack = () => {
     navigation.goBack();
+  };
+
+  const GoToNext = () => {
+    navigation.navigate('Level2Screen');
+    setCongrModalIsVisible(false);
   };
 
   return (
@@ -165,6 +248,8 @@ const Level1Screen = ({navigation}) => {
           title="Back"
           foo={GoBack}
         />
+
+        <CongratModal modalStatus={congrModalIsVisible} foo={GoToNext} />
       </View>
     </Layaut>
   );

@@ -8,3 +8,14 @@ The park features a famous man-made beach, making it a great spot for relaxation
 Cultural events, such as exhibitions, concerts, and festivals, take place here year-round. Nearby are important cultural institutions, such as the Queensland Cultural Centre, where you can visit art exhibitions, theatrical performances, and film screenings. A stroll through South Bank offers not only a chance to enjoy nature but also an opportunity to immerse yourself in the cultural life of Brisbane.
 `,
 };
+
+{
+  /**
+
+name: 
+photo:
+text: 
+
+ at sunset in a cartoon style
+*/
+}

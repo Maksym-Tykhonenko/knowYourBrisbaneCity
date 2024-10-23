@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import Layaut from '../../../components/Layaut';
 import LinearGradient from 'react-native-linear-gradient';
@@ -7,8 +7,37 @@ import LavelsBtn from '../../../components/LavelsBtn';
 import {Dimensions} from 'react-native';
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const ExplorerLevelScreen = ({navigation}) => {
+  const [lock2lvl, setLock2lvl] = useState(false);
+  const [lock3lvl, setLock3lvl] = useState(false);
+  const [lock4lvl, setLock4lvl] = useState(false);
+  const [lock5lvl, setLock5lvl] = useState(false);
+  const [lock6lvl, setLock6lvl] = useState(false);
+  const [lock7lvl, setLock7lvl] = useState(false);
+  const [lock8lvl, setLock8lvl] = useState(false);
+  const [lock9lvl, setLock9lvl] = useState(false);
+  const [lock10lvl, setLock10lvl] = useState(false);
+  console.log('lock2lvl', lock2lvl);
+
+  useEffect(() => {
+    getAboute2LvlData();
+  }, []);
+
+  const getAboute2LvlData = async () => {
+    try {
+      const jsonData = await AsyncStorage.getItem(`Level1Screen`);
+      if (jsonData !== null) {
+        const parsedData = JSON.parse(jsonData);
+        //console.log('parsedData==>', parsedData);
+        setLock2lvl(parsedData.passteLevel);
+      }
+    } catch (e) {
+      console.log('Помилка отримання даних:', e);
+    }
+  };
+
   const GoBack = () => {
     navigation.goBack();
   };
@@ -29,6 +58,7 @@ const ExplorerLevelScreen = ({navigation}) => {
             }}
           />
           <LavelsBtn
+            unlock={lock2lvl}
             castomeStyles={styles.castomeLevelsBtnStyles}
             title="2"
             foo={() => {

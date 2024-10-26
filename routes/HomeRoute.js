@@ -15,6 +15,15 @@ import Level7Screen from '../screens/Home/ExplorerLevel/Level7Screen';
 import Level8Screen from '../screens/Home/ExplorerLevel/Level8Screen';
 import Level9Screen from '../screens/Home/ExplorerLevel/Level9Screen';
 import Level10Screen from '../screens/Home/ExplorerLevel/Level10Screen';
+import MastermindLevelScren from '../screens/Home/MastermindLevel/MastermindLevelScreen';
+import MastLevel1Screen from '../screens/Home/MastermindLevel/MastLevel1Screen';
+import MastLevel2Screen from '../screens/Home/MastermindLevel/MastLevel2Screen';
+import MastLevel3Screen from '../screens/Home/MastermindLevel/MastLevel3Screen';
+import MastLevel4Screen from '../screens/Home/MastermindLevel/MastLevel4Screen';
+import MastLevel5Screen from '../screens/Home/MastermindLevel/MastLevel5Screen';
+import MastLevel6Screen from '../screens/Home/MastermindLevel/MastLevel6Screen';
+import MastLevel7Screen from '../screens/Home/MastermindLevel/MastLevel7Screen';
+import MastLevel8Screen from '../screens/Home/MastermindLevel/MastLevel8Screen';
 
 const HomeRoute = () => {
   return (
@@ -35,6 +44,18 @@ const HomeRoute = () => {
       <Stack.Screen name="Level8Screen" component={Level8Screen} />
       <Stack.Screen name="Level9Screen" component={Level9Screen} />
       <Stack.Screen name="Level10Screen" component={Level10Screen} />
+      <Stack.Screen
+        name="MastermindLevelScren"
+        component={MastermindLevelScren}
+      />
+      <Stack.Screen name="MastLevel1Screen" component={MastLevel1Screen} />
+      <Stack.Screen name="MastLevel2Screen" component={MastLevel2Screen} />
+      <Stack.Screen name="MastLevel3Screen" component={MastLevel3Screen} />
+      <Stack.Screen name="MastLevel4Screen" component={MastLevel4Screen} />
+      <Stack.Screen name="MastLevel5Screen" component={MastLevel5Screen} />
+      <Stack.Screen name="MastLevel6Screen" component={MastLevel6Screen} />
+      <Stack.Screen name="MastLevel7Screen" component={MastLevel7Screen} />
+      <Stack.Screen name="MastLevel8Screen" component={MastLevel8Screen} />
     </Stack.Navigator>
   );
 };

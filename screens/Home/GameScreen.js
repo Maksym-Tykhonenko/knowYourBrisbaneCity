@@ -31,7 +31,11 @@ const GameScreen = ({navigation}) => {
           </LinearGradient>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.btn}>
+        <TouchableOpacity
+          style={styles.btn}
+          onPress={() => {
+            navigation.navigate('MastermindLevelScren');
+          }}>
           <LinearGradient
             colors={['rgba(255, 0, 0, 0.8)', 'rgba(0, 0, 255, 0.8)']} // гра��ієнт від синього до червоного
             start={{x: 0, y: 0}}

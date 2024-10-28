@@ -24,6 +24,8 @@ import MastLevel5Screen from '../screens/Home/MastermindLevel/MastLevel5Screen';
 import MastLevel6Screen from '../screens/Home/MastermindLevel/MastLevel6Screen';
 import MastLevel7Screen from '../screens/Home/MastermindLevel/MastLevel7Screen';
 import MastLevel8Screen from '../screens/Home/MastermindLevel/MastLevel8Screen';
+import ResultScreen from '../screens/Home/ResultScreen';
+import AbouteScreen from '../screens/Home/AbouteScreen';
 
 const HomeRoute = () => {
   return (
@@ -56,6 +58,8 @@ const HomeRoute = () => {
       <Stack.Screen name="MastLevel6Screen" component={MastLevel6Screen} />
       <Stack.Screen name="MastLevel7Screen" component={MastLevel7Screen} />
       <Stack.Screen name="MastLevel8Screen" component={MastLevel8Screen} />
+      <Stack.Screen name="ResultScreen" component={ResultScreen} />
+      <Stack.Screen name="AbouteScreen" component={AbouteScreen} />
     </Stack.Navigator>
   );
 };

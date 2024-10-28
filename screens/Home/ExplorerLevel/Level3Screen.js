@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   ScrollView,
   Image,
+  Vibration,
 } from 'react-native';
 import Layaut from '../../../components/Layaut';
 import {lvl3} from '../../../data/Explorer/lvl3';
@@ -30,6 +31,8 @@ const Level3Screen = ({navigation}) => {
   ); // Список варіантів відповідей
   const [passteLevel, setPassteLevel] = useState(false);
   console.log('passteLevel==>', passteLevel);
+  const [vibroStatus, setVibroStatus] = useState(false);
+  console.log('vibroStatus==>', vibroStatus);
 
   useEffect(() => {
     getData();
@@ -72,6 +75,7 @@ const Level3Screen = ({navigation}) => {
 
   useEffect(() => {
     setCompliteData();
+    getVibrationData();
   }, [passteLevel]);
 
   const setCompliteData = async () => {
@@ -101,7 +105,25 @@ const Level3Screen = ({navigation}) => {
     }
   };
 
+  const getVibrationData = async () => {
+    try {
+      const jsonData = await AsyncStorage.getItem(`Vibration`);
+      if (jsonData !== null) {
+        const parsedData = JSON.parse(jsonData);
+        console.log('parsedData==>', parsedData);
+        setVibroStatus(parsedData.vibroStatus);
+      }
+    } catch (e) {
+      console.log('Помилка отримання даних:', e);
+    }
+  };
+
   const handleAnswerSelection = selectedAnswer => {
+    // Викликаємо вібрацію, якщо вона увімкнена
+    if (vibroStatus) {
+      Vibration.vibrate(100); // Вібрація на 100 мілісекунд
+    }
+
     const currentQuestion = lvl3[currentQuestionIndex];
     if (selectedAnswer === currentQuestion.correctAnswer) {
       // Якщо відповідь правильна, перейти до наступного питання

@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   ScrollView,
   Image,
+  Vibration,
 } from 'react-native';
 import Layaut from '../../../components/Layaut';
 import {lvl10} from '../../../data/Explorer/lvl10';
@@ -28,9 +29,12 @@ const Level10Screen = ({navigation}) => {
   const [availableAnswers, setAvailableAnswers] = useState(
     lvl10[currentQuestionIndex].answers,
   ); // Список варіантів відповідей
+  const [vibroStatus, setVibroStatus] = useState(false);
+  console.log('vibroStatus==>', vibroStatus);
 
   useEffect(() => {
     getData();
+    getVibrationData();
   }, []);
 
   useEffect(() => {
@@ -64,7 +68,25 @@ const Level10Screen = ({navigation}) => {
     }
   };
 
+  const getVibrationData = async () => {
+    try {
+      const jsonData = await AsyncStorage.getItem(`Vibration`);
+      if (jsonData !== null) {
+        const parsedData = JSON.parse(jsonData);
+        console.log('parsedData==>', parsedData);
+        setVibroStatus(parsedData.vibroStatus);
+      }
+    } catch (e) {
+      console.log('Помилка отримання даних:', e);
+    }
+  };
+
   const handleAnswerSelection = selectedAnswer => {
+    // Викликаємо вібрацію, якщо вона увімкнена
+    if (vibroStatus) {
+      Vibration.vibrate(100); // Вібрація на 100 мілісекунд
+    }
+
     const currentQuestion = lvl10[currentQuestionIndex];
     if (selectedAnswer === currentQuestion.correctAnswer) {
       // Якщо відповідь правильна, перейти до наступного питання

@@ -2,31 +2,27 @@ import React from 'react';
 import {Text, ImageBackground, View} from 'react-native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 const Stack = createNativeStackNavigator();
-
-function ScheduleScreen() {
-  return (
-    <View style={{flex: 1}}>
-      <ImageBackground
-        style={{flex: 1}}
-        source={require('../assets/back.webp')}>
-        <View
-          style={{
-            flex: 1,
-
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}>
-          <Text>Schedule Screen</Text>
-        </View>
-      </ImageBackground>
-    </View>
-  );
-}
+import ScheduleHomeScreen from '../screens/Schedule/ScheduleHomeScreen';
+import PhotoAlbumScreen from '../screens/Schedule/PhotoAlbumScreen';
+import ArticlesScreen from '../screens/Schedule/ArticlesScreen';
+import PersonalScheduleScreen from '../screens/Schedule/PersonalScheduleScreen';
+import FolderScreen from '../screens/Schedule/FolderScreen';
+import ArticleDetail from '../screens/Schedule/ArticleDetail';
+import NewArticleDetail from '../screens/Schedule/NewArticleDetail';
 
 const ScheduleRoute = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
-      <Stack.Screen name="ScheduleScreen" component={ScheduleScreen} />
+      <Stack.Screen name="ScheduleHomeScreen" component={ScheduleHomeScreen} />
+      <Stack.Screen name="PhotoAlbumScreen" component={PhotoAlbumScreen} />
+      <Stack.Screen name="ArticlesScreen" component={ArticlesScreen} />
+      <Stack.Screen
+        name="PersonalScheduleScreen"
+        component={PersonalScheduleScreen}
+      />
+      <Stack.Screen name="FolderScreen" component={FolderScreen} />
+      <Stack.Screen name="ArticleDetail" component={ArticleDetail} />
+      <Stack.Screen name="NewArticleDetail" component={NewArticleDetail} />
     </Stack.Navigator>
   );
 };

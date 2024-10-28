@@ -198,6 +198,7 @@ const styles = StyleSheet.create({
     color: '#fbc02e',
   },
 });
+
 export default HomeScreen;
 // PlaywriteGBS-LightItalic
 // PlaywriteGBS-Regular

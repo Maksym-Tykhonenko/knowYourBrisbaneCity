@@ -195,7 +195,7 @@ const MastLevel1Screen = ({navigation}) => {
       <View style={styles.conteiner}>
         <ScrollView>
           <View style={{alignItems: 'center'}}>
-            <Text style={styles.qwestion}>History of Brisbane</Text>
+            <Text style={styles.qwestion}>Brisbane’s Wildlife</Text>
             <View
               style={{
                 width: windowWidth,

@@ -3,7 +3,8 @@ import {StyleSheet, Text, TouchableOpacity, View, AppState} from 'react-native';
 import Layaut from '../../components/Layaut';
 import LinearGradient from 'react-native-linear-gradient';
 
-const ScheduleHomeScreen = ({navigation}) => {
+const ScheduleHomeScreen = ({navigation, route}) => {
+  console.log('ScheduleHomeScreen', route);
   return (
     <Layaut>
       <View

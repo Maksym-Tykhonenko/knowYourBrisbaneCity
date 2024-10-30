@@ -146,7 +146,7 @@ const Level2Screen = ({navigation}) => {
       // Якщо відповідь неправильна, відняти одне життя
       setHeart(prevHeart => {
         if (prevHeart - 1 < 1) {
-          Alert.alert('Game Over', 'Ваші життя закінчилися.', [
+          Alert.alert('Game Over', 'Your lives are over.', [
             {
               text: 'OK',
               onPress: () => navigation.navigate('GameScreen'), // Змінити 'Home' на потрібний екран
@@ -155,7 +155,7 @@ const Level2Screen = ({navigation}) => {
           //setCongrModalIsVisible(true);
           return 0; // Встановити життя на 0
         } else {
-          Alert.alert('Невірна відповідь', 'Спробуйте ще раз.');
+          Alert.alert('Wrong answer', 'Try again.');
           return prevHeart - 1;
         }
       });

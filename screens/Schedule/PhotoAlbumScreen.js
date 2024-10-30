@@ -98,7 +98,7 @@ const PhotoAlbumScreen = ({navigation}) => {
                   />
                   <Text
                     style={{
-                      color: '#fbc02e',
+                      color: '#c1dfde',
                       fontSize: 20,
                       fontFamily: 'PlaywriteGBS-Italic',
                     }}>

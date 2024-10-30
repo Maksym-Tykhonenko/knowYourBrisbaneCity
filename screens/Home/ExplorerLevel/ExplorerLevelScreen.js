@@ -156,7 +156,7 @@ const ExplorerLevelScreen = ({navigation}) => {
         <View style={styles.levelsConteiner}>
           {/**Levels Btn */}
           <LavelsBtn
-            castomeStylesText={{color: lock1lvl ? '#fbc02e' : 'grey'}}
+            castomeStylesText={{color: lock1lvl ? '#c1dfde' : 'grey'}}
             unlock={lock1lvl}
             castomeStyles={styles.castomeLevelsBtnStyles}
             title="1"
@@ -165,7 +165,7 @@ const ExplorerLevelScreen = ({navigation}) => {
             }}
           />
           <LavelsBtn
-            castomeStylesText={{color: lock2lvl ? '#fbc02e' : 'grey'}}
+            castomeStylesText={{color: lock2lvl ? '#c1dfde' : 'grey'}}
             unlock={lock2lvl}
             castomeStyles={styles.castomeLevelsBtnStyles}
             title="2"
@@ -174,7 +174,7 @@ const ExplorerLevelScreen = ({navigation}) => {
             }}
           />
           <LavelsBtn
-            castomeStylesText={{color: lock3lvl ? '#fbc02e' : 'grey'}}
+            castomeStylesText={{color: lock3lvl ? '#c1dfde' : 'grey'}}
             unlock={lock3lvl}
             castomeStyles={styles.castomeLevelsBtnStyles}
             title="3"
@@ -183,7 +183,7 @@ const ExplorerLevelScreen = ({navigation}) => {
             }}
           />
           <LavelsBtn
-            castomeStylesText={{color: lock4lvl ? '#fbc02e' : 'grey'}}
+            castomeStylesText={{color: lock4lvl ? '#c1dfde' : 'grey'}}
             unlock={lock4lvl}
             castomeStyles={styles.castomeLevelsBtnStyles}
             title="4"
@@ -192,7 +192,7 @@ const ExplorerLevelScreen = ({navigation}) => {
             }}
           />
           <LavelsBtn
-            castomeStylesText={{color: lock5lvl ? '#fbc02e' : 'grey'}}
+            castomeStylesText={{color: lock5lvl ? '#c1dfde' : 'grey'}}
             unlock={lock5lvl}
             castomeStyles={styles.castomeLevelsBtnStyles}
             title="5"
@@ -201,7 +201,7 @@ const ExplorerLevelScreen = ({navigation}) => {
             }}
           />
           <LavelsBtn
-            castomeStylesText={{color: lock6lvl ? '#fbc02e' : 'grey'}}
+            castomeStylesText={{color: lock6lvl ? '#c1dfde' : 'grey'}}
             unlock={lock6lvl}
             castomeStyles={styles.castomeLevelsBtnStyles}
             title="6"
@@ -210,7 +210,7 @@ const ExplorerLevelScreen = ({navigation}) => {
             }}
           />
           <LavelsBtn
-            castomeStylesText={{color: lock7lvl ? '#fbc02e' : 'grey'}}
+            castomeStylesText={{color: lock7lvl ? '#c1dfde' : 'grey'}}
             unlock={lock7lvl}
             castomeStyles={styles.castomeLevelsBtnStyles}
             title="7"
@@ -219,7 +219,7 @@ const ExplorerLevelScreen = ({navigation}) => {
             }}
           />
           <LavelsBtn
-            castomeStylesText={{color: lock8lvl ? '#fbc02e' : 'grey'}}
+            castomeStylesText={{color: lock8lvl ? '#c1dfde' : 'grey'}}
             unlock={lock8lvl}
             castomeStyles={styles.castomeLevelsBtnStyles}
             title="8"
@@ -228,7 +228,7 @@ const ExplorerLevelScreen = ({navigation}) => {
             }}
           />
           <LavelsBtn
-            castomeStylesText={{color: lock9lvl ? '#fbc02e' : 'grey'}}
+            castomeStylesText={{color: lock9lvl ? '#c1dfde' : 'grey'}}
             unlock={lock9lvl}
             castomeStyles={styles.castomeLevelsBtnStyles}
             title="9"
@@ -238,7 +238,7 @@ const ExplorerLevelScreen = ({navigation}) => {
           />
           <LavelsBtn
             castomeStylesText={{
-              color: lock10lvl ? '#fbc02e' : 'grey',
+              color: lock10lvl ? '#c1dfde' : 'grey',
               fontSize: 35,
             }}
             unlock={lock10lvl}

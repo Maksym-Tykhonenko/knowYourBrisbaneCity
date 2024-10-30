@@ -48,7 +48,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLouderIsEnded(true);
-    }, 5000);
+    }, 8000);
   }, []);
 
   return (
@@ -57,26 +57,30 @@ const App = () => {
         <Layaut>
           <View
             style={{
+              position: 'relative',
               flex: 1,
-              alignItems: 'center',
-              justifyContent: 'center',
-              backgroundColor: 'rgba(0, 0, 255, 0.1)',
+              //backgroundColor: 'rgba(0,0,0)',
             }}>
-            <Animated.View
+            <Animated.Image
+              source={require('./assets/upgr/Loader1.png')}
               style={{
+                //...props.style,
                 opacity: appearingAnim,
-                transform: [{scale: appearingAnim}],
-              }}>
-              <Text
-                style={{
-                  color: '#fbc02e',
-                  fontSize: 60,
-                  textAlign: 'center',
-                  fontFamily: 'PlaywriteGBS-Italic',
-                }}>
-                Welcome to "Brisbane Quest: Know Your City" App!!!
-              </Text>
-            </Animated.View>
+                width: '100%',
+                height: '100%',
+                position: 'absolute',
+              }}
+            />
+            <Animated.Image
+              source={require('./assets/upgr/Loader2.png')}
+              style={{
+                //...props.style,
+                opacity: appearingSecondAnim,
+                width: '100%',
+                height: '100%',
+                position: 'absolute',
+              }}
+            />
           </View>
         </Layaut>
       ) : (
@@ -108,7 +112,10 @@ const App = () => {
               tabBarButton: props => (
                 <TouchableOpacity {...props} style={{flex: 1, marginRight: 10}}>
                   <LinearGradient
-                    colors={['red', 'blue']} // градієнт від синього до червоного
+                    colors={[
+                      'rgba(29, 182, 37, 0.5)',
+                      'rgba(9, 227, 229, 0.5)',
+                    ]} // градієнт від синього до червоного
                     start={{x: 0, y: 0}}
                     end={{x: 1, y: 1}}
                     style={{
@@ -116,7 +123,7 @@ const App = () => {
                       height: 60,
                       borderRadius: 30,
                       borderWidth: 3,
-                      borderColor: '#fbc02e',
+                      borderColor: '#c1dfde',
                       alignItems: 'center',
                       justifyContent: 'center',
                     }}>
@@ -130,7 +137,7 @@ const App = () => {
                     name="man"
                     style={{
                       fontSize: 30,
-                      color: focused ? '#fbc02e' : '#6469a9',
+                      color: focused ? '#c1dfde' : '#131312',
                     }}
                   />
                 );
@@ -145,7 +152,10 @@ const App = () => {
               tabBarButton: props => (
                 <TouchableOpacity {...props} style={{flex: 1, marginRight: 10}}>
                   <LinearGradient
-                    colors={['red', 'blue']} // градієнт від синього до червоного
+                    colors={[
+                      'rgba(29, 182, 37, 0.5)',
+                      'rgba(9, 227, 229, 0.5)',
+                    ]} // градієнт від синього до червоного
                     start={{x: 0, y: 0}}
                     end={{x: 1, y: 1}}
                     style={{
@@ -153,7 +163,7 @@ const App = () => {
                       height: 60,
                       borderRadius: 30,
                       borderWidth: 3,
-                      borderColor: '#fbc02e',
+                      borderColor: '#c1dfde',
                       alignItems: 'center',
                       justifyContent: 'center',
                     }}>
@@ -167,7 +177,7 @@ const App = () => {
                     name="map-marked-alt"
                     style={{
                       fontSize: 30,
-                      color: focused ? '#fbc02e' : '#6469a9',
+                      color: focused ? '#c1dfde' : '#131312',
                     }}
                   />
                 );
@@ -181,7 +191,10 @@ const App = () => {
               tabBarButton: props => (
                 <TouchableOpacity {...props} style={{flex: 1, marginRight: 10}}>
                   <LinearGradient
-                    colors={['red', 'blue']} // градієнт від синього до червоного
+                    colors={[
+                      'rgba(29, 182, 37, 0.5)',
+                      'rgba(9, 227, 229, 0.5)',
+                    ]} // градієнт від синього до червоного
                     start={{x: 0, y: 0}}
                     end={{x: 1, y: 1}}
                     style={{
@@ -189,7 +202,7 @@ const App = () => {
                       height: 60,
                       borderRadius: 30,
                       borderWidth: 3,
-                      borderColor: '#fbc02e',
+                      borderColor: '#c1dfde',
                       alignItems: 'center',
                       justifyContent: 'center',
                     }}>
@@ -203,7 +216,7 @@ const App = () => {
                     name="home"
                     style={{
                       fontSize: 50,
-                      color: focused ? '#fbc02e' : '#6469a9',
+                      color: focused ? '#c1dfde' : '#131312',
                     }}
                   />
                 );
@@ -217,7 +230,10 @@ const App = () => {
               tabBarButton: props => (
                 <TouchableOpacity {...props} style={{flex: 1, marginRight: 10}}>
                   <LinearGradient
-                    colors={['red', 'blue']} // градієнт від синього до червоного
+                    colors={[
+                      'rgba(29, 182, 37, 0.5)',
+                      'rgba(9, 227, 229, 0.5)',
+                    ]} // градієнт від синього до червоного
                     start={{x: 0, y: 0}}
                     end={{x: 1, y: 1}}
                     style={{
@@ -225,7 +241,7 @@ const App = () => {
                       height: 60,
                       borderRadius: 30,
                       borderWidth: 3,
-                      borderColor: '#fbc02e',
+                      borderColor: '#c1dfde',
                       alignItems: 'center',
                       justifyContent: 'center',
                     }}>
@@ -239,7 +255,7 @@ const App = () => {
                     name="schedule"
                     style={{
                       fontSize: 30,
-                      color: focused ? '#fbc02e' : '#6469a9',
+                      color: focused ? '#c1dfde' : '#131312',
                     }}
                   />
                 );
@@ -254,7 +270,10 @@ const App = () => {
               tabBarButton: props => (
                 <TouchableOpacity {...props} style={{flex: 1, marginRight: 10}}>
                   <LinearGradient
-                    colors={['red', 'blue']} // градієнт від синього до червоного
+                    colors={[
+                      'rgba(29, 182, 37, 0.5)',
+                      'rgba(9, 227, 229, 0.5)',
+                    ]} // градієнт від синього до червоного
                     start={{x: 0, y: 0}}
                     end={{x: 1, y: 1}}
                     style={{
@@ -262,7 +281,7 @@ const App = () => {
                       height: 60,
                       borderRadius: 30,
                       borderWidth: 3,
-                      borderColor: '#fbc02e',
+                      borderColor: '#c1dfde',
                       alignItems: 'center',
                       justifyContent: 'center',
                     }}>
@@ -276,7 +295,7 @@ const App = () => {
                     name="settings"
                     style={{
                       fontSize: 30,
-                      color: focused ? '#fbc02e' : '#6469a9',
+                      color: focused ? '#c1dfde' : '#131312',
                     }}
                   />
                 );

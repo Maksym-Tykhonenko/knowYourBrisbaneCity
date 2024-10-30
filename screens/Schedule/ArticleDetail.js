@@ -30,11 +30,11 @@ const ArticleDetail = ({navigation, route}) => {
             flex: 1,
             alignItems: 'center',
             marginTop: 50,
-            backgroundColor: 'rgba(0, 0, 255, 0.2)',
+            backgroundColor: 'rgba(0, 0, 0, 0.3)',
           }}>
           <Text
             style={{
-              color: '#fbc02e',
+              color: '#c1dfde',
               fontSize: 30,
               fontFamily: 'PlaywriteGBS-Italic',
             }}>
@@ -46,7 +46,7 @@ const ArticleDetail = ({navigation, route}) => {
           />
           <Text
             style={{
-              color: '#fbc02e',
+              color: '#c1dfde',
               fontSize: 20,
               fontFamily: 'PlaywriteGBS-Italic',
               width: windowWidth * 0.9,

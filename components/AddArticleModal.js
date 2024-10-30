@@ -48,21 +48,21 @@ const AddArticleModal = ({modalStatus, foo, addArticle}) => {
   return (
     <Modal animationType="slide" transparent={true} visible={modalStatus}>
       <LinearGradient
-        colors={['rgba(255, 0, 0, 1)', 'rgba(0, 0, 255, 1)']}
+        colors={['rgba(29, 182, 37, 1)', 'rgba(9, 227, 229, 1)']}
         start={{x: 0, y: 0}}
         end={{x: 1, y: 1}}
         style={styles.gradientBackground}>
         <View style={styles.modalContent}>
           <TextInput
             placeholder="Art Name..."
-            placeholderTextColor="rgba(255, 215, 0, 0.5)"
+            placeholderTextColor="#c1dfde"
             style={styles.TextInputStyles}
             onChangeText={setArtName}
             value={artName}
           />
           <TextInput
             placeholder="Text..."
-            placeholderTextColor="rgba(255, 215, 0, 0.5)"
+            placeholderTextColor="#c1dfde"
             style={{...styles.TextInputStyles, marginTop: 10}}
             onChangeText={setText}
             value={text}
@@ -85,7 +85,7 @@ const AddArticleModal = ({modalStatus, foo, addArticle}) => {
             onPress={foo}>
             <Text
               style={{
-                color: '#fbc02e',
+                color: '#c1dfde',
                 fontSize: 40,
                 fontFamily: 'PlaywriteGBS-Italic',
               }}>
@@ -108,8 +108,8 @@ const styles = StyleSheet.create({
     marginHorizontal: '2%',
     borderRadius: 20,
     borderWidth: 3,
-    borderColor: '#fbc02e',
-    shadowColor: '#fbc02e',
+    borderColor: '#c1dfde',
+    shadowColor: '#c1dfde',
     shadowOffset: {width: 30, height: 10},
     shadowRadius: 15,
     shadowOpacity: 0.2,
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
   congratText: {
     fontSize: 64,
     fontWeight: 'bold',
-    color: '#fbc02e',
+    color: '#c1dfde',
     textAlign: 'center',
     fontFamily: 'PlaywriteGBS-Italic',
   },
@@ -139,10 +139,10 @@ const styles = StyleSheet.create({
     marginBottom: 30,
     padding: 10,
     borderWidth: 3,
-    borderColor: '#fbc02e',
+    borderColor: '#c1dfde',
     borderRadius: 50,
-    backgroundColor: 'rgba(0, 0, 255, 0.5)',
-    color: '#fbc02e',
+    backgroundColor: 'rgba(9, 227, 229, 0.5)',
+    color: '#c1dfde',
     fontSize: 30,
     fontFamily: 'Starnberg',
   },

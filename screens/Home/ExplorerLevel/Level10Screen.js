@@ -175,14 +175,14 @@ const Level10Screen = ({navigation}) => {
                   style={{height: 60, width: 60}}
                   source={require('../../../assets/heart.png')}
                 />
-                <Text style={{color: '#fbc02e', fontSize: 20}}>{heart}</Text>
+                <Text style={{color: '#c1dfde', fontSize: 20}}>{heart}</Text>
               </View>
               <View style={{alignItems: 'center'}}>
                 <Image
                   style={{height: 70, width: 70}}
                   source={require('../../../assets/reward.png')}
                 />
-                <Text style={{color: '#fbc02e', fontSize: 20}}>{points}</Text>
+                <Text style={{color: '#c1dfde', fontSize: 20}}>{points}</Text>
               </View>
               <View style={{alignItems: 'center'}}>
                 <TouchableOpacity onPress={useHelp}>
@@ -191,7 +191,7 @@ const Level10Screen = ({navigation}) => {
                     source={require('../../../assets/idea.png')}
                   />
                 </TouchableOpacity>
-                <Text style={{color: '#fbc02e', fontSize: 20}}>{help}</Text>
+                <Text style={{color: '#c1dfde', fontSize: 20}}>{help}</Text>
               </View>
             </View>
             <Text style={{...styles.qwestion, fontSize: 30}}>
@@ -204,8 +204,8 @@ const Level10Screen = ({navigation}) => {
                   height: 60,
                   borderWidth: 3,
                   borderRadius: 15,
-                  borderColor: '#fbc02e',
-                  backgroundColor: 'rgba(0, 0, 255, 0.4)',
+                  borderColor: '#c1dfde',
+                  backgroundColor: 'rgba(29, 182, 37, 0.5)',
                   alignItems: 'center',
                   justifyContent: 'center',
                   marginBottom: 20,
@@ -214,7 +214,7 @@ const Level10Screen = ({navigation}) => {
                 onPress={() => handleAnswerSelection(answer)}>
                 <Text
                   style={{
-                    color: '#fbc02e',
+                    color: '#c1dfde',
                     fontSize: 20,
                   }}>
                   {answer}
@@ -243,7 +243,7 @@ const styles = StyleSheet.create({
   qwestion: {
     fontSize: 40,
     fontFamily: 'PlaywriteGBS-Italic',
-    color: '#fbc02e',
+    color: '#c1dfde',
     textAlign: 'center',
   },
   castomeStyles: {
@@ -254,7 +254,7 @@ const styles = StyleSheet.create({
   btn: {
     height: 70,
     borderWidth: 3,
-    borderColor: '#fbc02e',
+    borderColor: '#c1dfde',
     borderRadius: 30,
     alignItems: 'center',
     justifyContent: 'center',
@@ -266,7 +266,7 @@ const styles = StyleSheet.create({
     height: '100%',
     width: '100%',
     borderWidth: 3,
-    borderColor: '#fbc02e',
+    borderColor: '#c1dfde',
     borderRadius: 30,
     alignItems: 'center',
     justifyContent: 'center',
@@ -274,7 +274,7 @@ const styles = StyleSheet.create({
   btnText: {
     fontSize: 25,
     fontFamily: 'PlaywriteGBS-Italic',
-    color: '#fbc02e',
+    color: '#c1dfde',
   },
 });
 

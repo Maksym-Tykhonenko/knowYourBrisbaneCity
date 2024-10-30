@@ -1,5 +1,12 @@
 import React, {useState, useEffect} from 'react';
-import {Text, Modal, View, StyleSheet, TextInput} from 'react-native';
+import {
+  Text,
+  Modal,
+  View,
+  StyleSheet,
+  TextInput,
+  TouchableOpacity,
+} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import OperationBtn from './OperationBtn';
 import {Dimensions} from 'react-native';
@@ -19,7 +26,7 @@ const AddFolderModal = ({modalStatus, foo, addFolder}) => {
   return (
     <Modal animationType="slide" transparent={true} visible={modalStatus}>
       <LinearGradient
-        colors={['rgba(255, 0, 0, 1)', 'rgba(0, 0, 255, 1)']} // градієнт від червоного до синього
+        colors={['rgba(29, 182, 37, 1)', 'rgba(9, 227, 229, 1)']} // градієнт від червоного до синього
         start={{x: 0, y: 0}}
         end={{x: 1, y: 1}}
         style={styles.gradientBackground}>
@@ -30,6 +37,20 @@ const AddFolderModal = ({modalStatus, foo, addFolder}) => {
             alignItems: 'center',
             justifyContent: 'center',
           }}>
+          <TouchableOpacity
+            onPress={() => {
+              foo();
+            }}
+            style={{position: 'absolute', right: 20, top: 10}}>
+            <Text
+              style={{
+                color: '#c1dfde',
+                fontSize: 40,
+                fontFamily: 'PlaywriteGBS-Italic',
+              }}>
+              X
+            </Text>
+          </TouchableOpacity>
           <Text style={{...styles.congratText, fontSize: 44}}>
             Please, enter
           </Text>
@@ -39,7 +60,7 @@ const AddFolderModal = ({modalStatus, foo, addFolder}) => {
 
           <TextInput
             placeholder="Folder Name..."
-            placeholderTextColor="rgba(255, 215, 0, 0.5)"
+            placeholderTextColor="#c1dfde"
             style={styles.TextInputStyles}
             onChangeText={setPrevFolderName}
             value={prevFolderName}
@@ -61,8 +82,8 @@ const styles = StyleSheet.create({
     marginHorizontal: '2%',
     borderRadius: 20,
     borderWidth: 3,
-    borderColor: '#fbc02e',
-    shadowColor: '#fbc02e',
+    borderColor: '#c1dfde',
+    shadowColor: '#c1dfde',
     shadowOffset: {width: 30, height: 10},
     shadowRadius: 15,
     shadowOpacity: 0.2,
@@ -80,7 +101,7 @@ const styles = StyleSheet.create({
   congratText: {
     fontSize: 64,
     fontWeight: 'bold',
-    color: '#fbc02e',
+    color: '#c1dfde',
     textAlign: 'center',
     fontFamily: 'PlaywriteGBS-Italic',
   },
@@ -91,10 +112,10 @@ const styles = StyleSheet.create({
     marginBottom: 30,
     padding: 10,
     borderWidth: 3,
-    borderColor: '#fbc02e',
+    borderColor: '#c1dfde',
     borderRadius: 50,
-    backgroundColor: 'rgba(0, 0, 255, 0.5)',
-    color: '#fbc02e',
+    backgroundColor: 'rgba(9, 227, 229, 0.5)',
+    color: '#c1dfde',
     fontSize: 30,
     fontFamily: 'Starnberg',
   },

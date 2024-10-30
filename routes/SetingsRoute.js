@@ -58,7 +58,7 @@ function SetingsScreen() {
     <View style={{flex: 1}}>
       <ImageBackground
         style={{flex: 1}}
-        source={require('../assets/back.webp')}>
+        source={require('../assets/upgr/Background.png')}>
         <View
           style={{
             flex: 1,
@@ -69,7 +69,7 @@ function SetingsScreen() {
           <Text
             style={{
               fontSize: 60,
-              color: '#fbc02e',
+              color: '#c1dfde',
               marginBottom: 40,
               fontFamily: 'PlaywriteGBS-Italic',
             }}>
@@ -78,7 +78,7 @@ function SetingsScreen() {
 
           <View
             style={{
-              backgroundColor: 'rgba(0, 0, 255, 0.2)',
+              backgroundColor: 'rgba(0, 0, 0, 0.3)',
               paddingTop: 20,
               borderRadius: 20,
             }}>
@@ -95,7 +95,7 @@ function SetingsScreen() {
               <Text
                 style={{
                   fontSize: 30,
-                  color: '#fbc02e',
+                  color: '#c1dfde',
                   fontFamily: 'PlaywriteGBS-Italic',
                 }}>
                 Music
@@ -117,7 +117,7 @@ function SetingsScreen() {
               <Text
                 style={{
                   fontSize: 30,
-                  color: '#fbc02e',
+                  color: '#c1dfde',
                   fontFamily: 'PlaywriteGBS-Italic',
                   marginRight: 35,
                 }}>

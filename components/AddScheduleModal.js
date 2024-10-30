@@ -32,7 +32,7 @@ const AddScheduleModal = ({modalStatus, foo, addEvent}) => {
   return (
     <Modal animationType="slide" transparent={true} visible={modalStatus}>
       <LinearGradient
-        colors={['rgba(255, 0, 0, 1)', 'rgba(0, 0, 255, 1)']}
+        colors={['rgba(29, 182, 37, 1)', 'rgba(9, 227, 229, 1)']}
         start={{x: 0, y: 0}}
         end={{x: 1, y: 1}}
         style={styles.gradientBackground}>
@@ -40,7 +40,7 @@ const AddScheduleModal = ({modalStatus, foo, addEvent}) => {
           <ScrollView showsVerticalScrollIndicator={false}>
             <TextInput
               placeholder="Place..."
-              placeholderTextColor="rgba(255, 215, 0, 0.5)"
+              placeholderTextColor="#c1dfde"
               style={styles.TextInputStyles}
               onChangeText={setArtName}
               value={artName}
@@ -48,7 +48,7 @@ const AddScheduleModal = ({modalStatus, foo, addEvent}) => {
             <View
               style={{width: '100%', alignItems: 'center', marginBottom: 10}}>
               <Text
-                style={{color: '#fbc02e', fontSize: 25, textAlign: 'center'}}>
+                style={{color: '#c1dfde', fontSize: 25, textAlign: 'center'}}>
                 Select a date
               </Text>
             </View>
@@ -68,7 +68,7 @@ const AddScheduleModal = ({modalStatus, foo, addEvent}) => {
 
             <TextInput
               placeholder="Add description..."
-              placeholderTextColor="rgba(255, 215, 0, 0.5)"
+              placeholderTextColor="#c1dfde"
               style={{
                 ...styles.TextInputStyles,
                 height: 160,
@@ -92,7 +92,7 @@ const AddScheduleModal = ({modalStatus, foo, addEvent}) => {
               onPress={foo}>
               <Text
                 style={{
-                  color: '#fbc02e',
+                  color: '#c1dfde',
                   fontSize: 40,
                   fontFamily: 'PlaywriteGBS-Italic',
                 }}>
@@ -115,8 +115,8 @@ const styles = StyleSheet.create({
     marginHorizontal: '2%',
     borderRadius: 20,
     borderWidth: 3,
-    borderColor: '#fbc02e',
-    shadowColor: '#fbc02e',
+    borderColor: '#c1dfde',
+    shadowColor: '#c1dfde',
     shadowOffset: {width: 30, height: 10},
     shadowRadius: 15,
     shadowOpacity: 0.2,
@@ -129,10 +129,10 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     padding: 10,
     borderWidth: 3,
-    borderColor: '#fbc02e',
+    borderColor: '#c1dfde',
     borderRadius: 50,
     backgroundColor: 'rgba(0, 0, 255, 0.5)',
-    color: '#fbc02e',
+    color: '#c1dfde',
     fontSize: 30,
     fontFamily: 'Starnberg',
   },

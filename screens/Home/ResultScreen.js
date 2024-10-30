@@ -94,13 +94,13 @@ const ResultScreen = ({navigation}) => {
 
 const styles = StyleSheet.create({
   conteiner: {paddingTop: 40, flex: 1},
-  subConteiner: {backgroundColor: 'rgba(0, 0, 255, 0.2)', borderRadius: 20},
+  subConteiner: {backgroundColor: 'rgba(0, 0, 0, 0.3)', borderRadius: 20},
   title: {
     fontSize: 34,
     fontWeight: 'bold',
     textAlign: 'center',
     marginVertical: 20,
-    color: '#fbc02e',
+    color: '#c1dfde',
     fontFamily: 'PlaywriteGBS-Italic',
   },
   scrollContainer: {
@@ -117,17 +117,17 @@ const styles = StyleSheet.create({
   rank: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#fbc02e',
+    color: '#c1dfde',
   },
   name: {
     fontSize: 18,
-    color: '#fbc02e',
+    color: '#c1dfde',
     fontFamily: 'PlaywriteGBS-Italic',
   },
   score: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#fbc02e',
+    color: '#c1dfde',
   },
   castomeStyles: {
     position: 'absolute',

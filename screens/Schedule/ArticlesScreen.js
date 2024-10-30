@@ -90,7 +90,7 @@ const ArticlesScreen = ({navigation}) => {
                 flexDirection: 'row',
                 flexWrap: 'wrap',
                 justifyContent: 'center',
-                backgroundColor: 'rgba(0, 0, 255, 0.2)',
+                backgroundColor: 'rgba(0, 0, 0, 0.3)',
               }}>
               {newArticles &&
                 newArticles.map(articl => {
@@ -111,7 +111,7 @@ const ArticlesScreen = ({navigation}) => {
                       }>
                       <Text
                         style={{
-                          color: '#fbc02e',
+                          color: '#c1dfde',
                           fontSize: 18,
                           fontFamily: 'PlaywriteGBS-Italic',
                         }}>
@@ -148,7 +148,7 @@ const ArticlesScreen = ({navigation}) => {
                     }>
                     <Text
                       style={{
-                        color: '#fbc02e',
+                        color: '#c1dfde',
                         fontSize: 18,
                         fontFamily: 'PlaywriteGBS-Italic',
                       }}>

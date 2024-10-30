@@ -129,7 +129,7 @@ const HomeScreen = ({navigation}) => {
             navigation.navigate('GameScreen');
           }}>
           <LinearGradient
-            colors={['rgba(255, 0, 0, 0.8)', 'rgba(0, 0, 255, 0.8)']} // градієнт від синього до червоного
+            colors={['rgba(29, 182, 37, 0.5)', 'rgba(9, 227, 229, 0.5)']} // градієнт від синього до червоного
             start={{x: 0, y: 0}}
             end={{x: 1, y: 1}}
             style={styles.btnLinearGradient}>
@@ -143,7 +143,7 @@ const HomeScreen = ({navigation}) => {
             navigation.navigate('ResultScreen');
           }}>
           <LinearGradient
-            colors={['rgba(255, 0, 0, 0.8)', 'rgba(0, 0, 255, 0.8)']} // градієнт від синього до червоного
+            colors={['rgba(29, 182, 37, 0.5)', 'rgba(9, 227, 229, 0.5)']} // градієнт від синього до червоного
             start={{x: 0, y: 0}}
             end={{x: 1, y: 1}}
             style={styles.btnLinearGradient}>
@@ -157,7 +157,7 @@ const HomeScreen = ({navigation}) => {
           }}
           style={styles.btn}>
           <LinearGradient
-            colors={['rgba(255, 0, 0, 0.8)', 'rgba(0, 0, 255, 0.8)']} // градієнт від синього до червоного
+            colors={['rgba(29, 182, 37, 0.5)', 'rgba(9, 227, 229, 0.5)']} // градієнт від синього до червоного
             start={{x: 0, y: 0}}
             end={{x: 1, y: 1}}
             style={styles.btnLinearGradient}>
@@ -176,9 +176,9 @@ const styles = StyleSheet.create({
     width: 270,
     height: 70,
     borderWidth: 3,
-    borderColor: '#fbc02e',
+    borderColor: '#c1dfde',
     borderRadius: 30,
-    //backgroundColor: '#fbc02e',
+    //backgroundColor: '#c1dfde',
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: 30,
@@ -187,7 +187,7 @@ const styles = StyleSheet.create({
     width: 270,
     height: 70,
     borderWidth: 3,
-    borderColor: '#fbc02e',
+    borderColor: '#c1dfde',
     borderRadius: 30,
     alignItems: 'center',
     justifyContent: 'center',
@@ -195,7 +195,7 @@ const styles = StyleSheet.create({
   btnText: {
     fontSize: 25,
     fontFamily: 'PlaywriteGBS-Italic',
-    color: '#fbc02e',
+    color: '#c1dfde',
   },
 });
 

@@ -11,7 +11,7 @@ const AbouteScreen = ({navigation}) => {
   return (
     <Layaut>
       <View style={styles.subConteiner}>
-        <Text style={{color: '#fbc02e', fontSize: 25}}>
+        <Text style={{color: '#c1dfde', fontSize: 25}}>
           Welcome to Brisbane Quest: Know Your City! Dive into an exciting
           journey through Brisbane, where every corner of the city is filled
           with history, culture, and amazing discoveries! Our app offers unique
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     right: 10,
   },
   subConteiner: {
-    backgroundColor: 'rgba(0, 0, 255, 0.2)',
+    backgroundColor: 'rgba(0, 0, 0, 0.3)',
     borderRadius: 20,
     marginTop: 50,
     marginHorizontal: 10,

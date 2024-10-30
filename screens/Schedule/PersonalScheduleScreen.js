@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
     left: 10,
   },
   eventContainer: {
-    backgroundColor: '#fbc02e',
+    backgroundColor: 'rgba(9, 227, 229, 1)',
     padding: 10,
     borderRadius: 10,
     marginVertical: 5,

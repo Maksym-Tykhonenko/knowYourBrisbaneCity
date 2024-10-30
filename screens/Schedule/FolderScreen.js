@@ -113,7 +113,7 @@ const FolderScreen = ({navigation, route}) => {
                       margin: 10,
                       borderWidth: 1,
                       borderRadius: 20,
-                      borderColor: '#fbc02e',
+                      borderColor: '#c1dfde',
                       justifyContent: 'center',
                       alignItems: 'center',
                     }}>

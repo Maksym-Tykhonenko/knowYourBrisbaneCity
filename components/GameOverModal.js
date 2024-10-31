@@ -7,7 +7,7 @@ const GameOverModal = ({modalStatus, foo}) => {
   return (
     <Modal animationType="slide" transparent={true} visible={modalStatus}>
       <LinearGradient
-        colors={['rgba(255, 0, 0, 1)', 'rgba(0, 0, 255, 1)']} // градієнт від червоного до синього
+        colors={['rgba(29, 182, 37, 1)', 'rgba(9, 227, 229, 1)']} // градієнт від червоного до синього
         start={{x: 0, y: 0}}
         end={{x: 1, y: 1}}
         style={styles.gradientBackground}>
@@ -42,8 +42,8 @@ const styles = StyleSheet.create({
     marginHorizontal: '2%',
     borderRadius: 20,
     borderWidth: 3,
-    borderColor: '#fbc02e',
-    shadowColor: '#fbc02e',
+    borderColor: '#c1dfde',
+    shadowColor: '#c1dfde',
     shadowOffset: {width: 30, height: 10},
     shadowRadius: 15,
     shadowOpacity: 0.2,
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
   congratText: {
     fontSize: 64,
     fontWeight: 'bold',
-    color: '#fbc02e',
+    color: '#c1dfde',
     textAlign: 'center',
     fontFamily: 'PlaywriteGBS-Italic',
   },

@@ -147,19 +147,19 @@ const MastermindLevelScren = ({navigation}) => {
               }}
               style={{
                 ...styles.levelBtn,
-                borderColor: lock1lvl ? '#fbc02e' : 'grey',
+                borderColor: lock1lvl ? '#c1dfde' : 'grey',
               }}>
               <LinearGradient
-                colors={['rgba(0, 0, 255, 0.7)', 'rgba(255, 0, 0, 0.7)']}
+                colors={['rgba(29, 182, 37, 1)', 'rgba(9, 227, 229, 1)']}
                 start={{x: 1, y: 0}}
                 end={{x: 1, y: 1}}
                 style={{
                   ...styles.levelBtnLinearGradient,
-                  borderColor: lock1lvl ? '#fbc02e' : 'grey',
+                  borderColor: lock1lvl ? '#c1dfde' : 'grey',
                 }}>
                 <Text
                   style={{
-                    color: lock1lvl ? '#fbc02e' : 'grey',
+                    color: lock1lvl ? '#c1dfde' : 'grey',
                     fontSize: 60,
                     fontWeight: 'bold',
                     marginBottom: 20,
@@ -168,7 +168,7 @@ const MastermindLevelScren = ({navigation}) => {
                 </Text>
                 <Text
                   style={{
-                    color: lock1lvl ? '#fbc02e' : 'grey',
+                    color: lock1lvl ? '#c1dfde' : 'grey',
                     fontFamily: 'PlaywriteGBS-Italic',
                     fontSize: 30,
                     textAlign: 'center',
@@ -195,19 +195,19 @@ const MastermindLevelScren = ({navigation}) => {
               }}
               style={{
                 ...styles.levelBtn,
-                borderColor: lock2lvl ? '#fbc02e' : 'grey',
+                borderColor: lock2lvl ? '#c1dfde' : 'grey',
               }}>
               <LinearGradient
-                colors={['rgba(0, 0, 255, 0.7)', 'rgba(255, 0, 0, 0.7)']}
+                colors={['rgba(29, 182, 37, 1)', 'rgba(9, 227, 229, 1)']}
                 start={{x: 1, y: 0}}
                 end={{x: 1, y: 1}}
                 style={{
                   ...styles.levelBtnLinearGradient,
-                  borderColor: lock2lvl ? '#fbc02e' : 'grey',
+                  borderColor: lock2lvl ? '#c1dfde' : 'grey',
                 }}>
                 <Text
                   style={{
-                    color: lock2lvl ? '#fbc02e' : 'grey',
+                    color: lock2lvl ? '#c1dfde' : 'grey',
                     fontSize: 60,
                     fontWeight: 'bold',
                     marginBottom: 20,
@@ -216,7 +216,7 @@ const MastermindLevelScren = ({navigation}) => {
                 </Text>
                 <Text
                   style={{
-                    color: lock2lvl ? '#fbc02e' : 'grey',
+                    color: lock2lvl ? '#c1dfde' : 'grey',
                     fontFamily: 'PlaywriteGBS-Italic',
                     fontSize: 30,
                     textAlign: 'center',
@@ -243,19 +243,19 @@ const MastermindLevelScren = ({navigation}) => {
               }}
               style={{
                 ...styles.levelBtn,
-                borderColor: lock3lvl ? '#fbc02e' : 'grey',
+                borderColor: lock3lvl ? '#c1dfde' : 'grey',
               }}>
               <LinearGradient
-                colors={['rgba(0, 0, 255, 0.7)', 'rgba(255, 0, 0, 0.7)']}
+                colors={['rgba(29, 182, 37, 1)', 'rgba(9, 227, 229, 1)']}
                 start={{x: 1, y: 0}}
                 end={{x: 1, y: 1}}
                 style={{
                   ...styles.levelBtnLinearGradient,
-                  borderColor: lock3lvl ? '#fbc02e' : 'grey',
+                  borderColor: lock3lvl ? '#c1dfde' : 'grey',
                 }}>
                 <Text
                   style={{
-                    color: lock3lvl ? '#fbc02e' : 'grey',
+                    color: lock3lvl ? '#c1dfde' : 'grey',
                     fontSize: 60,
                     fontWeight: 'bold',
                     marginBottom: 20,
@@ -264,7 +264,7 @@ const MastermindLevelScren = ({navigation}) => {
                 </Text>
                 <Text
                   style={{
-                    color: lock3lvl ? '#fbc02e' : 'grey',
+                    color: lock3lvl ? '#c1dfde' : 'grey',
                     fontFamily: 'PlaywriteGBS-Italic',
                     fontSize: 30,
                     textAlign: 'center',
@@ -291,19 +291,19 @@ const MastermindLevelScren = ({navigation}) => {
               }}
               style={{
                 ...styles.levelBtn,
-                borderColor: lock4lvl ? '#fbc02e' : 'grey',
+                borderColor: lock4lvl ? '#c1dfde' : 'grey',
               }}>
               <LinearGradient
-                colors={['rgba(0, 0, 255, 0.7)', 'rgba(255, 0, 0, 0.7)']}
+                colors={['rgba(29, 182, 37, 1)', 'rgba(9, 227, 229, 1)']}
                 start={{x: 1, y: 0}}
                 end={{x: 1, y: 1}}
                 style={{
                   ...styles.levelBtnLinearGradient,
-                  borderColor: lock4lvl ? '#fbc02e' : 'grey',
+                  borderColor: lock4lvl ? '#c1dfde' : 'grey',
                 }}>
                 <Text
                   style={{
-                    color: lock4lvl ? '#fbc02e' : 'grey',
+                    color: lock4lvl ? '#c1dfde' : 'grey',
                     fontSize: 60,
                     fontWeight: 'bold',
                     marginBottom: 20,
@@ -312,7 +312,7 @@ const MastermindLevelScren = ({navigation}) => {
                 </Text>
                 <Text
                   style={{
-                    color: lock4lvl ? '#fbc02e' : 'grey',
+                    color: lock4lvl ? '#c1dfde' : 'grey',
                     fontFamily: 'PlaywriteGBS-Italic',
                     fontSize: 30,
                     textAlign: 'center',
@@ -339,19 +339,19 @@ const MastermindLevelScren = ({navigation}) => {
               }}
               style={{
                 ...styles.levelBtn,
-                borderColor: lock5lvl ? '#fbc02e' : 'grey',
+                borderColor: lock5lvl ? '#c1dfde' : 'grey',
               }}>
               <LinearGradient
-                colors={['rgba(0, 0, 255, 0.7)', 'rgba(255, 0, 0, 0.7)']}
+                colors={['rgba(29, 182, 37, 1)', 'rgba(9, 227, 229, 1)']}
                 start={{x: 1, y: 0}}
                 end={{x: 1, y: 1}}
                 style={{
                   ...styles.levelBtnLinearGradient,
-                  borderColor: lock5lvl ? '#fbc02e' : 'grey',
+                  borderColor: lock5lvl ? '#c1dfde' : 'grey',
                 }}>
                 <Text
                   style={{
-                    color: lock5lvl ? '#fbc02e' : 'grey',
+                    color: lock5lvl ? '#c1dfde' : 'grey',
                     fontSize: 60,
                     fontWeight: 'bold',
                     marginBottom: 20,
@@ -360,7 +360,7 @@ const MastermindLevelScren = ({navigation}) => {
                 </Text>
                 <Text
                   style={{
-                    color: lock5lvl ? '#fbc02e' : 'grey',
+                    color: lock5lvl ? '#c1dfde' : 'grey',
                     fontFamily: 'PlaywriteGBS-Italic',
                     fontSize: 30,
                     textAlign: 'center',
@@ -387,19 +387,19 @@ const MastermindLevelScren = ({navigation}) => {
               }}
               style={{
                 ...styles.levelBtn,
-                borderColor: lock6lvl ? '#fbc02e' : 'grey',
+                borderColor: lock6lvl ? '#c1dfde' : 'grey',
               }}>
               <LinearGradient
-                colors={['rgba(0, 0, 255, 0.7)', 'rgba(255, 0, 0, 0.7)']}
+                colors={['rgba(29, 182, 37, 1)', 'rgba(9, 227, 229, 1)']}
                 start={{x: 1, y: 0}}
                 end={{x: 1, y: 1}}
                 style={{
                   ...styles.levelBtnLinearGradient,
-                  borderColor: lock6lvl ? '#fbc02e' : 'grey',
+                  borderColor: lock6lvl ? '#c1dfde' : 'grey',
                 }}>
                 <Text
                   style={{
-                    color: lock6lvl ? '#fbc02e' : 'grey',
+                    color: lock6lvl ? '#c1dfde' : 'grey',
                     fontSize: 60,
                     fontWeight: 'bold',
                     marginBottom: 20,
@@ -408,7 +408,7 @@ const MastermindLevelScren = ({navigation}) => {
                 </Text>
                 <Text
                   style={{
-                    color: lock6lvl ? '#fbc02e' : 'grey',
+                    color: lock6lvl ? '#c1dfde' : 'grey',
                     fontFamily: 'PlaywriteGBS-Italic',
                     fontSize: 30,
                     textAlign: 'center',
@@ -435,19 +435,19 @@ const MastermindLevelScren = ({navigation}) => {
               }}
               style={{
                 ...styles.levelBtn,
-                borderColor: lock7lvl ? '#fbc02e' : 'grey',
+                borderColor: lock7lvl ? '#c1dfde' : 'grey',
               }}>
               <LinearGradient
-                colors={['rgba(0, 0, 255, 0.7)', 'rgba(255, 0, 0, 0.7)']}
+                colors={['rgba(29, 182, 37, 1)', 'rgba(9, 227, 229, 1)']}
                 start={{x: 1, y: 0}}
                 end={{x: 1, y: 1}}
                 style={{
                   ...styles.levelBtnLinearGradient,
-                  borderColor: lock7lvl ? '#fbc02e' : 'grey',
+                  borderColor: lock7lvl ? '#c1dfde' : 'grey',
                 }}>
                 <Text
                   style={{
-                    color: lock7lvl ? '#fbc02e' : 'grey',
+                    color: lock7lvl ? '#c1dfde' : 'grey',
                     fontSize: 60,
                     fontWeight: 'bold',
                     marginBottom: 20,
@@ -456,7 +456,7 @@ const MastermindLevelScren = ({navigation}) => {
                 </Text>
                 <Text
                   style={{
-                    color: lock7lvl ? '#fbc02e' : 'grey',
+                    color: lock7lvl ? '#c1dfde' : 'grey',
                     fontFamily: 'PlaywriteGBS-Italic',
                     fontSize: 30,
                     textAlign: 'center',
@@ -483,19 +483,19 @@ const MastermindLevelScren = ({navigation}) => {
               }}
               style={{
                 ...styles.levelBtn,
-                borderColor: lock8lvl ? '#fbc02e' : 'grey',
+                borderColor: lock8lvl ? '#c1dfde' : 'grey',
               }}>
               <LinearGradient
-                colors={['rgba(0, 0, 255, 0.7)', 'rgba(255, 0, 0, 0.7)']}
+                colors={['rgba(29, 182, 37, 1)', 'rgba(9, 227, 229, 1)']}
                 start={{x: 1, y: 0}}
                 end={{x: 1, y: 1}}
                 style={{
                   ...styles.levelBtnLinearGradient,
-                  borderColor: lock8lvl ? '#fbc02e' : 'grey',
+                  borderColor: lock8lvl ? '#c1dfde' : 'grey',
                 }}>
                 <Text
                   style={{
-                    color: lock8lvl ? '#fbc02e' : 'grey',
+                    color: lock8lvl ? '#c1dfde' : 'grey',
                     fontSize: 60,
                     fontWeight: 'bold',
                     marginBottom: 20,
@@ -504,7 +504,7 @@ const MastermindLevelScren = ({navigation}) => {
                 </Text>
                 <Text
                   style={{
-                    color: lock8lvl ? '#fbc02e' : 'grey',
+                    color: lock8lvl ? '#c1dfde' : 'grey',
                     fontFamily: 'PlaywriteGBS-Italic',
                     fontSize: 30,
                     textAlign: 'center',
@@ -562,7 +562,7 @@ const styles = StyleSheet.create({
     height: windowHeight * 0.6,
     borderWidth: 3,
     borderRadius: 40,
-    borderColor: '#fbc02e',
+    borderColor: '#c1dfde',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -572,7 +572,7 @@ const styles = StyleSheet.create({
     width: '100%',
     borderWidth: 3,
     borderRadius: 40,
-    borderColor: '#fbc02e',
+    borderColor: '#c1dfde',
     alignItems: 'center',
     justifyContent: 'center',
   },

@@ -95,7 +95,7 @@ const ProfileScreen = ({navigation}) => {
             style={{
               ...styles.avatarBtn,
               borderWidth: selectAvatar && 3,
-              borderColor: '#fbc02e',
+              borderColor: '#c1dfde',
             }}
             onPress={() => {
               SelectAvatarPicer();
@@ -103,7 +103,7 @@ const ProfileScreen = ({navigation}) => {
             {!selectAvatar ? (
               <Image
                 style={styles.image}
-                source={require('../../assets/avatar.png')}
+                source={require('../../assets/rocker.png')}
               />
             ) : (
               <Image style={styles.image} source={{uri: selectAvatar}} />
@@ -119,7 +119,7 @@ const ProfileScreen = ({navigation}) => {
             <View style={{alignItems: 'center'}}>
               <TextInput
                 placeholder="User Name..."
-                placeholderTextColor="rgba(255, 215, 0, 0.5)"
+                placeholderTextColor="#c1dfde"
                 style={styles.TextInputStyles}
                 onChangeText={setPrevName}
                 value={prevName}
@@ -168,7 +168,7 @@ const styles = StyleSheet.create({
   userNameConteiner: {marginTop: 20, alignItems: 'center'},
   userNameText: {
     fontSize: 40,
-    color: '#fbc02e',
+    color: '#c1dfde',
     fontFamily: 'PlaywriteGBS-Italic',
   },
   TextInputStyles: {
@@ -177,10 +177,10 @@ const styles = StyleSheet.create({
     margin: 12,
     padding: 10,
     borderWidth: 3,
-    borderColor: '#fbc02e',
+    borderColor: '#c1dfde',
     borderRadius: 50,
-    backgroundColor: 'rgba(0, 0, 255, 0.5)',
-    color: '#fbc02e',
+    backgroundColor: 'rgba(9, 227, 229, 0.5)',
+    color: '#c1dfde',
     fontSize: 30,
     fontFamily: 'Starnberg',
   },

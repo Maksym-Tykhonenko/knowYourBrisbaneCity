@@ -77,11 +77,11 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
     borderRadius: 12,
     borderWidth: 3,
-    borderColor: '#fbc02e',
+    borderColor: '#c1dfde',
   },
   title: {
     fontSize: 40,
-    color: '#fbc02e',
+    color: '#c1dfde',
     fontFamily: 'PlaywriteGBS-Italic',
     fontWeight: 'bold',
     marginBottom: 5,

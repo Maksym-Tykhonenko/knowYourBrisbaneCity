@@ -122,13 +122,6 @@ const App = () => {
     }
   };
 
-  /////////////////////////////////////////////////////////
-  //DeviceInfo.getUniqueId().then(uniqueId => {
-  //  //console.log('uniqueId==========>', uniqueId);
-  //  setIdfv(uniqueId);
-  //});
-  ///////////////////////////////////////////////////////////
-
   ///////// Ad Attribution
   //fetching AdServices token
   const fetchAdServicesToken = async () => {
